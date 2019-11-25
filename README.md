@@ -1,5 +1,7 @@
 # RServer-on-AWS
-instructions to build a RServer on AWS instance
+instructions to build a RServer on AWS instance  
+![(https://github.com/JeanMILPIED/RServer-on-AWS/blob/master/RServer_img.png)]  
+
 
 ## description of the R-Server structure
 * the R server will be open on a public instance on your public VPC on AWS
