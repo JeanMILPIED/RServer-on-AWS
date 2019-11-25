@@ -32,11 +32,11 @@ instructions to build a RServer on AWS instance
 ## Option2: create an instance and add code into it for automatic install of the R-Server on it
 ### follow the same steps as Option1 but:
 * in the Advanced Details section of the Instance creation panel, add:
-...#!/bin/bash
+`#!/bin/bash
 sudo yum update -y
 sudo amazon-linux-extras install R3.4 -y
 wget https://download2.rstudio.org/server/centos6/x86_64/rstudio-server-rhel-1.2.5019-x86_64.rpm
 sudo yum -y install rstudio-server-rhel-1.2.5019-x86_64.rpm
 sudo useradd jean
-echo jean:1234 | sudo chpasswd
+echo jean:1234 | sudo chpasswd`
 ### how to connect to your R server on your instance with username and password
