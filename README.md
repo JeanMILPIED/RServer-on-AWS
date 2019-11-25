@@ -27,11 +27,16 @@ instructions to build a RServer on AWS instance
  
 
 ### how to install the R server on your instance
-
+* connect to your EC2 instance with SSH protocole from your computer using the console code:
+`ssh -i "JM_Keypair.pem" ec2-user@3.234.223.11`  
+(note: don't forget to place yourself in the directory where your keypair is with the `cd` command)  
+* update your instance with linux code (and wait for the update):
+`sudo yum update -y`
+*
 
 ## Option2: create an instance and add code into it for automatic install of the R-Server on it
 ### follow the same steps as Option1 but:
-* in the Advanced Details section of the Instance creation panel, add:
+* in the Advanced Details section of the Instance creation panel, add:  
 `#!/bin/bash`  
 `sudo yum update -y`  
 `sudo amazon-linux-extras install R3.4 -y`  
