@@ -1,6 +1,6 @@
 # RServer-on-AWS
 instructions to build a RServer on AWS instance  
-![(https://github.com/JeanMILPIED/RServer-on-AWS/blob/master/RServer_img.png)]  
+!(https://github.com/JeanMILPIED/RServer-on-AWS/blob/master/RServer_img.png) 
 
 
 ## description of the R-Server structure
