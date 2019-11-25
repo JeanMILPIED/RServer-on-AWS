@@ -56,4 +56,14 @@ instructions to build a RServer on AWS instance
 `sudo useradd jean`  
 `echo jean:1234 | sudo chpasswd`  
 
-### how to connect to your R server on your instance with username and password
+## how to connect to your R server on your instance with username and password
+* in your AWS/Services/EC2 instance details, add a custom TCP rule to the inbound requests
+ * TYPE: Custom TCP Rule
+ * PROTOCOL: TCP
+ * PORT RANGE : 8787 (note: this is the port range of the RStudio server)
+* copy the public IP adress associated to your Instance
+* go to your browser and connect to your Instance typing its IP address :8787 (port of the RServer)
+ * example: http://3.234.223.11:8787/
+ 
+## thanks for following and HAVE FUN!
+ 
